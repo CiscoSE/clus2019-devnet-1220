@@ -7,11 +7,11 @@ package main
 import (
 	"fmt"
 	// Step 2 imports
-	
+
 
 	// Step 3 imports
+    
 
-	
 	// Step 4 imports
 	
 
@@ -28,7 +28,7 @@ func main() {
 	fmt.Print("\nWelcome to the telemetry app\n")
 	// ************* Step 2 - Configure telemetry
 	
-
+	
 
 	// ************* End Step 2
 

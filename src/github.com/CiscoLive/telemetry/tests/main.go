@@ -6,14 +6,9 @@ package main
 
 import (
 	"fmt"
-	// Step 2 imports
 	xr "github.com/nleiva/xrgrpc"
 	"log"
 	"os"
-
-
-
-	// Step 3 imports
     "os/signal"
 	"context"
 
@@ -34,7 +29,7 @@ func main() {
 		xr.WithUsername("vagrant"),
 		xr.WithPassword("vagrant"),
 		xr.WithHost("192.0.2.2:57344"),
-		xr.WithCert("../ems.pem"),
+		xr.WithCert("../dial_in/ems.pem"),
 		xr.WithTimeout(60),
 	)
 	if err != nil {

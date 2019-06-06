@@ -1,7 +1,7 @@
 Vagrant.configure(2) do |config|
   # collector (Ubuntu 16.04)
   config.vm.define "collector" do |config|
-    config.vm.box = "ubuntu/xenial64"
+    config.vm.box = "ubuntu/xenial64.sfloresk"
     config.vm.provision "shell", path: "collector.sh"
     config.vm.provider "virtualbox" do |vb|
       vb.name = "collector"
@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
   end
   # XR (6.4.2)
   config.vm.define "xr" do |config|
-    config.vm.box =  "iosxrv-fullk9-x64.snapshot.6.4.2"
+    config.vm.box =  "iosxrv-fullk9-x64.snapshot.6.4.2.sfloresk"
     config.vm.provision "file", source: "router1.xr", destination: "/home/vagrant/config"
     config.vm.provision "shell" do |s|
         s.path =  "apply_config.sh"
@@ -24,4 +24,3 @@ Vagrant.configure(2) do |config|
     config.vm.network :private_network, virtualbox__intnet: "link2", auto_config: false
   end
  end
-

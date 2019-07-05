@@ -34,6 +34,6 @@ go get github.com/nleiva/xrgrpc
 ```bash
 cd src/github.com/CiscoLive/telemetry/dial_in
 go build
-/dial_in
+./dial_in
 ```
 

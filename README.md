@@ -10,21 +10,22 @@ Please contact sfloresk@cisco.com if you need access to the vagrant images and t
 
 If you want to run the app in your laptop instead of in the Ubuntu VM, you will need to go over these steps: (assuming either Mac or Linux OS)
 
-1- Install Go (Tested with go1.12.3) - https://golang.org/doc/install?download=go1.12.4.linux-amd64.tar.gz 
+1- Install Go (Tested with go1.12.3) - https://golang.org/dl/
 
 2- Clone the repo
 
 ```bash
 git clone https://github.com/CiscoSE/devnet_3000.git $HOME/devnet_3000
+git checkout completed
 ```
 
-3- Source enviroment and download libraries
+3- Create directories, source enviroment and download libraries. If you get errors download the libraries, check your proxy settings
 
 ```bash
 cd $HOME/devnet_3000
-source .env
 mkdir pkg
 mkdir bin
+source .env
 go get github.com/golang/protobuf/proto
 go get github.com/nleiva/xrgrpc
 ```

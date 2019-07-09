@@ -10,7 +10,7 @@ Please contact sfloresk@cisco.com if you need access to the vagrant images and t
 
 If you want to run the app in your laptop instead of in the Ubuntu VM, you will need to go over these steps: (assuming either Mac or Linux OS)
 
-1- Install Go (Tested with go1.12.3) - https://golang.org/doc/install?download=go1.12.4.linux-amd64.tar.gz 
+1- Install Go (Tested with go1.12.3) - https://golang.org/dl/
 
 2- Clone the repo
 

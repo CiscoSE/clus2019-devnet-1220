@@ -18,13 +18,13 @@ If you want to run the app in your laptop instead of in the Ubuntu VM, you will 
 git clone https://github.com/CiscoSE/devnet_3000.git $HOME/devnet_3000
 ```
 
-3- Source enviroment and download libraries
+3- Create directories, source enviroment and download libraries. If you get errors download the libraries, check your proxy configuration
 
 ```bash
 cd $HOME/devnet_3000
-source .env
 mkdir pkg
 mkdir bin
+source .env
 go get github.com/golang/protobuf/proto
 go get github.com/nleiva/xrgrpc
 ```
